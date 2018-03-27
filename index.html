@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta name="author" content="???" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Title -->
+  <title>Projet Photo</title>
+
+  <!-- Css Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- Header -->
+  <div class="page-header container" id="test">
+    <h1>Projet <small>AJAX</small></h1>
+  </div>
+<div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/fr/city/2988507"><span style="color:gray;">Heure actuelle</span><br />Paris, France</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=medium&timezone=Europe%2FParis" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+  <!-- Errors div -->
+
+  <div id="errors" class="container">
+
+  </div>
+
+  <div id="authentication" class="container" style="display: none">
+      <h2>Authentification</h2>
+      <form>
+          <div class="input-group">
+              <span class="input-group-addon">Login</span>
+              <input type="text" class="form-control" id="login" placeholder="Entrez votre login" autofocus>
+          </div>
+          <div class="input-group">
+              <span class="input-group-addon">Mot de passe</span>
+              <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe" required>
+          </div>
+          </br>
+          <button type="submit" class="btn btn-success pull-right" id="authentication-send">
+              <span class="glyphicon glyphicon-ok"></span> Envoyer
+          </button>
+      </form>
+  </div>
+
+
+
+<div class="col-md-8">
+
+  <div class="panel panel-default">
+    <div class="panel-heading" >
+      <h3 class="panel-title">Photo</h3>
+    </div>
+    <div id="thumbnails" class="panel-body">
+    </div>
+  </div>
+  <div class="col-md-8" id="fatom">
+        <div class="panel panel-default">
+          <div class="panel-heading" >
+            <h3 class="panel-title">Photo</h3>
+          </div>
+          <div id="photo2" class="panel-body">
+
+          </div>
+        </div>
+
+  <!-- Twitts div -->
+  <div id="twitts" class="container">
+    <h3>Liste des twitts</h3>
+  </div>
+
+  <!-- Add twitt div -->
+  <div id="twitt-add" class="container">
+    <form>
+      <div class="input-group">
+        <span class="input-group-addon">Twitt ></span>
+        <input type="text" class="form-control" id="twitt" placeholder="Entrez votre twitt" autofocus>
+      </div>
+      <br />
+      <button type="submit" class="btn btn-success pull-right" id="add-button">
+        <span class="glyphicon glyphicon-send"></span> Envoyer
+      </button>
+    </form>
+  </div>
+
+
+  </div>
+</div>
+
+<!-- Timestamp div -->
+
+<div class="col-md-4">
+  <!-- <div class="panel-heading" > -->
+  <div id="chat">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title"> chat </h2>
+      </div>
+      <div class="panel-body">
+        <form>
+          <textarea class="form-control" rows="10" id="chat-room" readonly></textarea>
+          <div class="input-group">
+            <spanclass="input_group-addon">Message</span>
+            <input type="text" class="form-control" id="chat-message" placeholder="Entrez votre message" autofocus>
+
+
+          </div>
+          <br>
+          <button type="submit" class="btn btn-success pull-right" id="chat-send">
+            <span class="glyphicon glyphicon-send"> Envoyer</span>
+          </button>
+
+        </form>
+      </div>
+    </div>
+    <!-- </div> -->
+  </div>
+  <div id="chat" class="panel-body">
+  </div>
+  <!-- </div> -->
+</div>
+
+
+
+
+<!-- Js Scripts -->
+<script src="js/jquery.min.js"></script>
+<script src="js/js.cookie.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/ajax.js"></script>
+<script src="js/authentification.js"></script>
+<script src="js/loading.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/commentaire.js"></script>
+</body>
+</html>
